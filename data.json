@@ -1,0 +1,26 @@
+{
+    "links": [
+        {
+            "title" : "Social",
+            "icon": "./icons/social-icon.svg",
+            "cont": [
+                {
+                    "name": "Instagram",
+                    "icon": "",
+                    "link": "www.instagram.com"
+                }
+            ]
+        },
+        {
+            "title" : "Coding",
+            "icon": "./icons/coding-icon.svg",
+            "cont": [
+                {
+                    "name": "Leetcode",
+                    "icon": "",
+                    "link": "www.leetcode.com"
+                }
+            ]
+        }
+    ]
+}
