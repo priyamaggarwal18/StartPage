@@ -1,41 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HomePage</title>
-    <link href="./styles/main.css" rel="stylesheet">
-    <link href="./styles/right.css" rel="stylesheet">
-</head>
-<body>
+    <link href="./styles/main.css" rel="stylesheet" />
+    <link href="./styles/right.css" rel="stylesheet" />
+  </head>
+  <body>
     <div id="main-container">
-        <div id="links-main-container">
-            <button class="link-outer-button" onclick="">
-                <div class="link-inner-cont">
-                    <div class="link-icon-cont"><img src="./icons/social-icon.svg" alt="Icon" class="link-icon">
+      <div id="links-main-container">
+        <button class="link-outer-button" onclick="">
+          <div class="link-inner-cont">
+            <div class="link-icon-cont">
+              <img src="./icons/social-icon.svg" alt="Icon" class="link-icon" />
+            </div>
+            <div class="link-name">Icons</div>
+          </div>
+          <div class="arrow-outer">
+            <img src="./icons/arrow-next.svg" class="arrow-inner" alt="arrow" />
+          </div>
+        </button>
+      </div>
+      <div></div>
+      <div id="right-main-container">
+        <div id="search-cont">
+          <div id="search-inner">
+            <img
+              src="./icons/search-icon.svg"
+              id="search-icon"
+              alt="search-icon"
+            />
+            <input type="text" id="search-input" placeholder="Search Google" />
+            <img
+              src="./icons/search-continue.svg"
+              id="search-next-icon"
+              alt="enter-icon"
+            />
+          </div>
+        </div>
+          <div id="access-outer-cont">
+              <div id="timer-outer-cont">
+                <div id="timer-inner-cont">
+                  <span class="time-span" id="hours">11</span>
+                  <span class="time-colon-cont">:</span>
+                  <span class="time-span" id="minutes">13</span>
+                  <span class="time-colon-cont">:</span>
+                  <span class="time-span" id="seconds">55</span>
+                  <span class="time-legend">Hours</span>
+                  <span class="time-inv-colon">:</span>
+                  <span class="time-legend">Minutes</span>
+                  <span class="time-inv-colon">:</span>
+                  <span class="time-legend">Seconds</span>
+                </div>
+                <div id="date-cont">15 Aug 2024</div>
+              </div>
+              <div id="weat-outer-cont">
+                <div id="weat-up-cont">
+                  <div id="icon-cloud-cont">
+                    <img src="./icons/cloud-sun.svg" id="cloud-icon" alt="cloud-icon">
+                  </div>
+                  <div>
+                    <div id="temp-outer-cont">
+                    <div id="weather-code">---</div>
+                    <div id="temp-value-cont">
+                      <span id="temp-value">--</span>
+                      <span id="temp-unit">&deg;C</span>
                     </div>
-                    <div class="link-name">Icons</div>
+                    </div>
+                  </div>
                 </div>
-                <div class="arrow-outer">
-                    <img src="./icons/arrow-next.svg" class="arrow-inner" alt="arrow">
+                <div id="weat-between-line"></div>
+                <div id="weat-down-cont">
+                  <div class="weat-below-cont">
+                    <img src="./icons/wind.svg" class="weather-icons" alt="wind-icon">
+                    <span class="weat-value"><span id="wind-value">-</span> km/h</span>
+                    <span class="weat-icon-desp">Wind</span>
+                  </div>
+                  <div class="weat-below-cont">
+                    <img src="./icons/rain.svg" class="weather-icons" alt="rain-icon">
+                    <span class="weat-value"><span id="rain-value">-</span> mm</span>
+                    <span class="weat-icon-desp">Precipitation</span>
+                  </div>
+                  <div class="weat-below-cont">
+                    <img src="./icons/humidity.svg" class="weather-icons" alt="humidity-icon">
+                    <span class="weat-value"><span id="humidity-value">-</span> &percnt;</span>
+                    <span class="weat-icon-desp">Humidity</span>
+                  </div>
                 </div>
-            </button>
-        </div>
-        <div id="right-main-container">
-            <div id="search-cont">
-                <div id="search-inner">
-                    <img src="./icons/search-icon.svg" id="search-icon" alt="search-icon">
-                    <input type="text" id="search-input" placeholder="Search Google">
-                    <img src="./icons/search-continue.svg" id="search-next-icon" alt="enter-icon">
+              </div>
+            <div id="github-outer-cont">
+              <div id="github-inner-cont">
+                <img src="" id="github-dp" alt="Github Profile Pic">
+                <div id="github-info-cont">
+                  <h2 id="github-full-name"></h2>
+                  <a href="" id="github-username"></a>
+                  <p id="github-follow-cont">
+                    <a href="https://github.com/navjot369?tab=followers" ><span id="github-followers"></span> Followers</a>
+                    <a href="https://github.com/navjot369?tab=following" ><span id="github-followings"></span> Following</a>
+                  </p>
                 </div>
+              </div>
+              <div id="github-links-cont">
+                <a href="https://github.com" class="github-links">Dashboard</a>
+                <a href="https://github.com/navjot369" class="github-links">Profile</a>
+                <a href="https://github.com/navjot369?tab=repositories" class="github-links">Repositories</a>
+              </div>
             </div>
-            <div id="right-sub-cont">
-                <div></div>
-                <div></div>
-            </div>
-        </div>
+          </div>
+      </div>
     </div>
     <script src="./scripts/data.js"></script>
-</body>
+    <script src="./scripts/weather.js"></script>
+    <script src="./scripts/leetcode.js"></script>
+    <script src="./scripts/github.js"></script>
+  </body>
 </html>
-
