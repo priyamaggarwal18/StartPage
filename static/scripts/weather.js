@@ -4,7 +4,6 @@ async function setWeather() {
 
         let data = await res.json();
         data = data.current;
-        console.log(data);
         document.getElementById("temp-value").innerHTML = Math.round(data.temperature_2m);
         document.getElementById("weather-code").innerHTML = code_map[data.weather_code.toString()];
         document.getElementById("wind-value").innerHTML = data.wind_speed_10m;
