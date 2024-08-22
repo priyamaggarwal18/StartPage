@@ -1,0 +1,288 @@
+#right-main-container {
+    display: grid;
+    height: 100%;
+    grid-template-rows: min-content 1fr;
+    align-items: center;
+    padding: 0 5px;
+}
+
+/* Search Bar */
+#search-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+#search-inner {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40px 1fr 40px;
+    justify-items: center;
+    background: rgba(255, 255, 255, 0.5);
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px 0;
+}
+#search-input {
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#search-input::placeholder {
+    color: #111;
+}
+#search-icon {
+    width: 30px;
+}
+#search-next-icon {
+    width: 30px;
+    filter: invert(0.2);
+}
+
+#right-sub-cont {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+#access-outer-cont {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    row-gap: 30px;
+    column-gap: 50px;
+
+}
+/* #time-weat-cont {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+} */
+#timer-outer-cont {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    padding: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#timer-inner-cont {
+    background: black;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 10px 1fr 10px 1fr;
+    grid-template-rows: 1fr 20px;
+    justify-items: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 15px;
+    margin: 17px 0;
+    transform: scale(1.2);
+    box-shadow: 0 0 2px 1px white;
+}
+.time-colon-cont {
+    font-size: 60px;
+    line-height: 50px;
+    padding-bottom: 10px;
+}
+.time-inv-colon {
+    font-size: 30px;
+    visibility: hidden;
+}
+.time-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2px;
+}
+.time-span {
+    font-size: 60px;
+    line-height: 50px;
+}
+.time-legend {
+    font-size: 10px;
+    color: #aaa;
+}
+#date-cont {
+    text-align: center;
+    font-weight: bold;
+    padding-top: 5px;
+}
+#weat-outer-cont {
+    background: black;
+    border-radius: 15px;
+    border: 2px solid white;
+    display: grid;
+    grid-template-rows: 1.5fr 2px 1fr;
+    padding: 5px;
+    justify-items: center;
+}
+#weat-up-cont {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 5px 10px;
+}
+#icon-cloud-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+#cloud-icon {
+    width: 80px;
+}
+#temp-outer-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5px;
+    padding: 5px;
+}
+#weather-code {
+    color: #aaa;
+    font-size: 14px;
+    text-align: center;
+    font-family: fantasy;
+}
+#temp-value-cont{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    color: white;
+}
+#temp-value {
+    font-size: 40px;
+}
+#temp-unit {
+    font-size: 10px;
+    color: #eee;
+    padding-top: 5px;
+}
+
+#weat-between-line{
+    width: 90%;
+    height: 2px;
+    background: white;
+    border-radius: 5px;
+}
+#weat-down-cont {
+    margin: 5px 0;
+    padding: 0 20px;
+    gap: 10px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+
+}
+.weat-below-cont {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.weather-icons {
+    width: 25px;
+}
+.weat-value {
+    font-size: 12px;
+    text-wrap: nowrap;
+    padding: 2px;
+}
+.weat-value span{
+    font-size: 15px;
+}
+.weat-icon-desp {
+    color: #aaa;
+    font-size: 10px;
+}
+
+#github-outer-cont {
+    margin: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    padding: 5px;
+}
+#github-inner-cont {
+    border-radius: 10px;
+    background: #000000;
+    overflow: hidden;
+    display: grid;
+    padding: 0;
+    grid-template-columns: 100px 1fr;
+    align-items: stretch;
+    color: white;
+    min-height: 84px;
+}
+#github-dp {
+    border-radius: 10px;
+    width: 100px;
+}
+#github-info-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    padding: 10px;
+}
+#github-info-cont a{
+    color: white;
+    text-decoration: none;
+}
+#github-info-cont a:hover {
+    text-decoration: underline;
+}
+#github-follow-cont {
+    margin: 0;
+    font-size: 15px;
+}
+#github-follow-cont a {
+    color: #aaa;
+    margin-right: 10px;
+}
+#github-full-name {
+    font-size: 25px;
+    font-weight: normal;
+    margin: 10px 0;
+}
+#github-links-cont {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 5px;
+}
+.github-links {
+    font-size: 18px;
+    margin: 0 5px;
+    color: white;
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: 200ms;
+}
+.github-links:hover {
+    transform: scale(1.1);
+    background: rgba(0, 0, 0, 1.2);
+}
+
+
+
+
+
+
+
