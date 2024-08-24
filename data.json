@@ -1,26 +1,28 @@
 {
-    "links": [
-        {
-            "title" : "Social",
-            "icon": "./icons/social-icon.svg",
-            "cont": [
-                {
-                    "name": "Instagram",
-                    "icon": "",
-                    "link": "www.instagram.com"
-                }
-            ]
-        },
-        {
-            "title" : "Coding",
-            "icon": "./icons/coding-icon.svg",
-            "cont": [
-                {
-                    "name": "Leetcode",
-                    "icon": "",
-                    "link": "www.leetcode.com"
-                }
-            ]
+    "Social": {
+        "icon": "./icons/social-icon.svg",
+        "cont": {
+            "Instagram": {
+                "icon": "./icons/instagram-logo.svg",
+                "link": "www.instagram.com"
+            },
+            "X": {
+                "icon": "./icons/x-logo.svg",
+                "link": "www.x.com"
+            },
+            "Facebook": {
+                "icon": "./icons/facebook-logo.svg",
+                "link": "www.facebook.com"
+            }
         }
-    ]
+    },
+    "Coding": {
+        "icon": "./icons/coding-icon.svg",
+        "cont": {
+            "Leetcode": {
+                "icon": "",
+                "link": "www.leetcode.com"
+            }
+        }
+    }
 }
