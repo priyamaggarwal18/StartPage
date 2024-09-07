@@ -1,10 +1,10 @@
 #right-main-container {
-    display: grid;
+    display: flex;
     height: 100%;
-    grid-template-rows: min-content 1fr;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     padding: 0 5px;
-    max-width: 33%;
 }
 
 /* Search Bar */
@@ -13,6 +13,8 @@
     justify-content: center;
     align-items: center;
     padding: 0;
+    width: 100%;
+    flex-shrink: 0;
 }
 #search-inner {
     width: 100%;
@@ -55,10 +57,10 @@
     grid-template-columns: 50% 50%;
     justify-content: center;
     align-items: center;
-    margin: 20px;
+    margin: 10px 20px;
     row-gap: 10px;
     column-gap: 20px;
-
+    flex-shrink: 0;
 }
 /* #time-weat-cont {
     width: 100%;
@@ -227,10 +229,23 @@
     align-items: stretch;
     color: white;
     min-height: 84px;
+    position: relative;
+}
+#github-back-icon {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 60px;
+    filter: brightness(50%);
+    transition: all linear 100ms 0s;
 }
 #github-dp {
     border-radius: 10px;
     width: 100px;
+}
+#github-outer-cont:hover #github-back-icon {
+    transform: scale(1.2);
+    filter: brightness(70%);
 }
 #github-info-cont {
     display: flex;

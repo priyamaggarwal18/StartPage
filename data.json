@@ -4,7 +4,7 @@
         "cont": {
             "Instagram": {
                 "icon": "./icons/instagram-logo.svg",
-                "link": "www.instagram.com"
+                "link": "https://www.instagram.com"
             },
             "X": {
                 "icon": "./icons/x-logo.svg",

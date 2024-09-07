@@ -21,7 +21,7 @@ body{
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     width: 100vw;
-    min-height: 100vh;
+    height: 100vh;
     transition: all 100ms linear 0ms;
 }
 #links-main-container {
