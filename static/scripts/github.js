@@ -1,8 +1,4 @@
-fetch("https://api.github.com/users/navjot369", {
-    headers: {
-        'Authorization' : "token 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"
-    }
-})
+fetch("https://api.github.com/users/navjot369", {})
   .then(response => response.json())
   .then(data => {
     document.getElementById("github-dp").setAttribute("src", data.avatar_url);
