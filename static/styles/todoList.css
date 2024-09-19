@@ -46,9 +46,14 @@
     margin: 0 5px;
     border-bottom: 2px solid #eee;
 }
-.to-do-topic {
+
+
+.to-do-topic, .to-do-topic-done {
     color: white;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.to-do-topic-done {
+    text-decoration: line-through;
 }
 .to-do-content {
     display: flex;
