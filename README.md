@@ -1,4 +1,4 @@
-# **Project: Personalized Startpage**
+# ** Personalized Startpage**
 
 **Description:**
 
@@ -9,6 +9,8 @@ This project is a custom-built startpage designed to enhance your browsing exper
 * **GitHub Stats:** Display your GitHub profile details, including followers, following, and repositories.
 * **To-Do List:** Keep track of your tasks and stay organized. Create, edit, and delete tasks to stay organized.
 * **Google Custom Search:** Search the web directly from your startpage.
+
+**Check it our here:** https://personalized-startpage.netlify.app 🔗
 
 **Installation:**
 
@@ -22,13 +24,13 @@ This project is a custom-built startpage designed to enhance your browsing exper
    ```
 3. **Run the development server (temporary):**
    ```bash
-   npm dev
+   npm run dev
    ```
    **Run the server(local) continuously, even after closing the terminal:**
    ```bash
-   npm start
+   npm run start
    ```
-5. **Access the startpage:** Open your browser and navigate to `http://localhost:3001`.
+5. **Access the startpage:** Open your browser and navigate to `http://localhost:3000`.
    
 
 **Customization:**
