@@ -1,14 +1,143 @@
-let data;
-
-async function fetchData() {
-    try {
-        const response = await fetch('/getData');
-        data = await response.json(); 
-
-    } catch (error) {
-        console.error('Error fetching data:', error);
+let data = {
+    "Social": {
+        "icon": "./icons/social-icon.svg",
+        "cont": {
+            "Instagram": {
+                "icon": "./icons/instagram-logo.svg",
+                "link": "https://www.instagram.com"
+            },
+            "X": {
+                "icon": "./icons/x-logo.svg",
+                "link": "https://www.x.com"
+            },
+            "Facebook": {
+                "icon": "./icons/facebook-logo.svg",
+                "link": "https://www.facebook.com"
+            },
+            "YouTube": {
+                "icon": "./icons/youtube-logo.svg",
+                "link": "https://www.youtube.com"
+            },
+            "LinkedIn": {
+                "icon": "./icons/linkedin-logo.svg",
+                "link": "https://www.linkedin.com"
+            },
+            "Pinterest": {
+                "icon": "./icons/pinterest-logo.svg",
+                "link": "https://www.pinterest.com"
+            },
+            "Reddit": {
+                "icon": "./icons/reddit-logo.svg",
+                "link": "https://www.reddit.com"
+            }
+        }
+    },
+    "Coding": {
+        "icon": "./icons/coding-icon.svg",
+        "cont": {
+            "LeetCode": {
+                "icon": "./icons/leetcode-logo.svg",
+                "link": "https://leetcode.com"
+            },
+            "HackerRank": {
+                "icon": "./icons/hackerrank-logo.svg",
+                "link": "https://www.hackerrank.com"
+            },
+            "Codeforces": {
+                "icon": "./icons/codeforces-logo.svg",
+                "link": "https://codeforces.com"
+            },
+            "CodeChef": {
+                "icon": "./icons/codechef-logo.svg",
+                "link": "https://www.codechef.com"
+            },
+            "AtCoder": {
+                "icon": "./icons/atcoder-logo.svg",
+                "link": "https://atcoder.jp"
+            },
+            "TopCoder": {
+                "icon": "./icons/topcoder-logo.svg",
+                "link": "https://www.topcoder.com"
+            }
+        }
+    },
+    "Developer": {
+        "icon": "./icons/developer-logo.svg",
+        "cont": {
+            "GitHub": {
+                "icon": "./icons/github-logo.svg",
+                "link": "https://github.com"
+            },
+            "Stack Overflow": {
+                "icon": "./icons/stackoverflow-logo.svg",
+                "link": "https://stackoverflow.com"
+            },
+            "Codecademy": {
+                "icon": "./icons/codecademy-logo.svg",
+                "link": "https://www.codecademy.com"
+            },
+            "FreeCodeCamp": {
+                "icon": "./icons/freecodecamp-logo.svg",
+                "link": "https://www.freecodecamp.org"
+            },
+            "Coursera": {
+                "icon": "./icons/coursera-logo.svg",
+                "link": "https://www.coursera.org"
+            },
+            "Udemy": {
+                "icon": "./icons/udemy-logo.svg",
+                "link": "https://www.udemy.com"
+            },
+            "edX": {
+                "icon": "./icons/edx-logo.svg",
+                "link": "https://www.edx.org"
+            }
+        }
+    },
+    "Documentation": {
+        "icon": "./icons/documentation-logo.svg",
+        "cont": {
+            "Python": {
+                "icon": "./icons/python-logo.svg",
+                "link": "https://docs.python.org/3/"
+            },
+            "C": {
+                "icon": "./icons/c-logo.svg",
+                "link": "https://en.cppreference.com/w/cpp/language"
+            },
+            "Java": {
+                "icon": "./icons/java-logo.svg",
+                "link": "https://docs.oracle.com/en/java/javase/19/docs/api/"
+            },
+            "JavaScript": {
+                "icon": "./icons/javascript-logo.svg",
+                "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference"
+            },
+            "C++": {
+                "icon": "./icons/cpp-logo.svg",
+                "link": "https://en.cppreference.com/w/cpp/language"
+            },
+            "PHP": {
+                "icon": "./icons/php-logo.svg",
+                "link": "https://www.php.net/manual/en/index.php"
+            },
+            "Go": {
+                "icon": "./icons/go-logo.svg",
+                "link": "https://go.dev/doc/"
+            }
+        }
     }
-}
+};
+
+// async function fetchData() {
+//     try {
+//         const response = await fetch('/getData');
+//         data = await response.json(); 
+
+//     } catch (error) {
+//         console.error('Error fetching data:', error);
+//     }
+// }
 
 let OuterCont;
 
@@ -103,13 +232,11 @@ function showSubLinks(title) {
         subLinkCont.appendChild(outerCont);
     }
 
-    // console.log(links);
 
 
 }
 
-fetchData().then(() => {
-    console.log(data);
+// fetchData().then(() => {
     const container = document.getElementById("links-main-container");
 
 
@@ -150,7 +277,6 @@ fetchData().then(() => {
 
         buttonOuter.appendChild(outerCont);
         buttonOuter.appendChild(arrowEle.cloneNode(true));
-        console.log(title);
 
         buttonOuter.id = title;
         buttonOuter.onclick = function(e) {
@@ -174,7 +300,7 @@ fetchData().then(() => {
         //         </div>
         //     </button>
     
-});
+// });
 
 
 
