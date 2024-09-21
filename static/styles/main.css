@@ -66,6 +66,7 @@ body{
 }
 .link-icon {                    
     width: 20px;
+    fill: #ffffff;
 }
 .link-name {
     color: white;

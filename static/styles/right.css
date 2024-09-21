@@ -26,6 +26,13 @@
     border-radius: 10px;
     padding: 5px 0;
 }
+#query-submit-button{
+    background: none;
+    outline: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
 #search-input {
     width: 100%;
     background: none;
@@ -43,6 +50,9 @@
 #search-next-icon {
     width: 30px;
     filter: invert(0.2);
+}
+#search-input:focus ~ button img {
+    filter: invert(1);
 }
 
 #right-sub-cont {
