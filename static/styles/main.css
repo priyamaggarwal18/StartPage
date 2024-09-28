@@ -33,15 +33,17 @@ body{
     position: absolute;
     bottom: 100%;
 }
-#heading-edit-link {
+#edit-link {
     color: #c9c9c9;
     text-decoration: none;
     font-size: 20px;
     padding: 20px;
-    display: none;
+    position: fixed;
+    right: 0;
+    bottom: 0;
 }
-#greeting-cont:hover #heading-edit-link {
-    display: inline;
+#edit-link:hover {
+    color: white;
 }
 #links-main-container {
     position: relative;
