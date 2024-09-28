@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Info</title>
+    <link href="./styles/main.css" rel="stylesheet" />
+    <link href="./styles/info.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="main-container" class="main-cont">
+        <form id="form-info">
+            <h2 id="form-heading" >Info</h2>
+            <p id="form-desp">Customize your homepage by providing the following details</p>
+            <label for="name-input">Name</label>
+            <input id="name-input" type="text" name="user-name" placeholder="e.g. Navjot Singh" required>
+            <label for="github-input">Github Username</label>
+            <input id="github-input" type="text" name="github-user" placeholder="e.g. navjot369">
+            <div id="loc-label-cont">
+                <label for="latitude-input">Location</label>
+                <button id="auto-location" type="button" title="Requires Location Permission">Auto-Detect</button>
+            </div>
+            <div id="location-cont">
+                <div>
+                    <label for="latitude-input"  class="location-label" >Latitude</label>
+                    <input id="latitude-input" type="text" name="latitude" placeholder="e.g. 30">
+                </div>
+                <div>
+                    <label for="longitude-input" class="location-label" >Longitude</label>
+                    <input id="longitude-input" type="text" name="longitude" placeholder="e.g. 76">
+                </div>
+            </div>
+            <button type="submit" id="done-button">Done</button>
+        </form>
+    </div>
+    <script src="./scripts/info.js"></script>
+</body>
+</html>
