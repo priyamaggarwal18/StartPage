@@ -1,6 +1,11 @@
 async function setWeather() {
+    let longitude = localStorage.getItem("longitude");
+    let latitude = localStorage.getItem("latitude");
+    if(!longitude || !latitude) {
+
+    }
     try {
-        const res = await fetch("https://api.open-meteo.com/v1/forecast?latitude=30.51&longitude=76.65&current=temperature_2m,relative_humidity_2m,is_day,precipitation,weather_code,wind_speed_10m&timezone=auto&forecast_days=1");
+        const res = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current=temperature_2m,relative_humidity_2m,is_day,precipitation,weather_code,wind_speed_10m&timezone=auto&forecast_days=1`);
 
         let data = await res.json();
         data = data.current;

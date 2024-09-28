@@ -302,5 +302,7 @@ function showSubLinks(title) {
     
 // });
 
-
-
+let user = localStorage.getItem("user-name");
+if(user) {
+    document.getElementById("greeting-message").innerHTML = `Hello, ${user}`;
+}
