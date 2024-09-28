@@ -10,7 +10,7 @@ This project is a custom-built startpage designed to enhance your browsing exper
 * **To-Do List:** Keep track of your tasks and stay organized. Create, edit, and delete tasks to stay organized.
 * **Google Custom Search:** Search the web directly from your startpage.
 
-**Check it our here:** https://personalized-startpage.netlify.app 🔗
+**Check it our here:** [https://start-page-brown.vercel.app ](https://start-page-brown.vercel.app)🔗
 
 ## **Installation:**
 
@@ -50,7 +50,7 @@ This project is a custom-built startpage designed to enhance your browsing exper
 
 ## **Preview:**
 
-  <img width="1000" alt="Screenshot 2024-09-21 at 10 45 25 AM" src="https://github.com/user-attachments/assets/d4792c2f-3663-4a50-a976-8640bc793ec5">
+  <img width="1440" alt="Screenshot 2024-09-29 at 2 22 09 AM" src="https://github.com/user-attachments/assets/936f7886-50e6-47fb-bd2b-d93fc621beab">
 
 
 ## **Contributing:**
