@@ -15,7 +15,7 @@ body{
 #main-container {
     display: grid;
     grid-template-columns: 2fr 1fr 3fr;
-    padding: 100px;
+    padding: 130px 100px 100px 100px;
     gap: 0;
     background-color: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(5px);
@@ -24,7 +24,27 @@ body{
     height: 100vh;
     transition: all 100ms linear 0ms;
 }
+#greeting-cont {
+    color: white;
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 0 10px 0;
+    width: 1000px;
+    position: absolute;
+    bottom: 100%;
+}
+#heading-edit-link {
+    color: #c9c9c9;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px;
+    display: none;
+}
+#greeting-cont:hover #heading-edit-link {
+    display: inline;
+}
 #links-main-container {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: start;

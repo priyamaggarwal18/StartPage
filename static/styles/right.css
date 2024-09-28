@@ -228,6 +228,26 @@
     border-radius: 15px;
     grid-column: 1/3;
     padding: 5px;
+    position: relative;
+}
+#github-err-cont {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    background: rgba(100, 100, 100, 0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 20;
+    left: 0;
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    display: flex;
+}
+#github-err-message {
+    font-size: 20px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 #github-inner-cont {
     border-radius: 10px;
