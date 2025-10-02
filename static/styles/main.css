@@ -1,49 +1,95 @@
-* {
-    box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
 
-body{
+body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url("../Images/bg1.jpg");
-    background-size: cover;
+    min-height: 100vh;
+    background: linear-gradient(
+        rgba(24, 24, 34, 0.85),
+        rgba(24, 24, 34, 0.85)
+      ), url("../Images/bg1.jpg") no-repeat center center/cover;
     background-attachment: fixed;
     margin: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Nunito', 'Gill Sans', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 #main-container {
     display: grid;
     grid-template-columns: 2fr 1fr 3fr;
-    padding: 130px 100px 100px 100px;
-    gap: 0;
-    background-color: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    width: 100vw;
-    height: 100vh;
-    transition: all 100ms linear 0ms;
+    width: 100%;
+    min-height: 90vh;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+    padding: 80px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 18px;
+    transition: all 180ms cubic-bezier(0.4,0.1,0.2,1) 0ms;
 }
-#greeting-cont {
-    color: white;
-    font-size: 40px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0 0 10px 0;
-    width: 1000px;
+
+/* Glassmorphism card container */
+.card-container {
+    background: rgba(23, 23, 30, 0.58); /* On-theme dark & transparent */
+    border-radius: 20px;
+    box-shadow: 0 8px 40px 0 rgba(20,20,30,0.24);
+    backdrop-filter: blur(16px) saturate(110%);
+    -webkit-backdrop-filter: blur(16px) saturate(110%);
+    border: 1.5px solid rgba(255,255,255,0.15);
+    transition:
+        transform 0.32s cubic-bezier(.34,1.56,.64,1),
+        box-shadow 0.3s cubic-bezier(.34,1.56,.64,1),
+        background 0.25s cubic-bezier(.4,0,.2,1);
+    overflow: hidden;
+    position: relative;
+}
+
+/* Shine edge on card for glass effect */
+.card-container::after {
+    content: "";
     position: absolute;
-    bottom: 100%;
+    top: 0; left: 0; right: 0; bottom: 0;
+    border-radius: 20px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.13) 0%, rgba(255,255,255,0.05) 100%);
+    pointer-events: none;
+    z-index: 1;
 }
+
+/* Animated glass hover */
+.card-container:hover {
+    background: rgba(35, 37, 58, 0.74);
+    transform: translateY(-12px) scale(1.045) rotateZ(-0.2deg);
+    box-shadow: 0 16px 52px 10px rgba(50, 90, 190, 0.10),
+                0 4px 32px 4px rgba(120,160,255,0.06);
+    border-color: rgba(140,180,255,0.23);
+}
+
+.card-container:hover::after {
+    background: linear-gradient(120deg, rgba(220,240,255,0.17) 10%, rgba(140,180,255,0.11) 90%);
+    transition: background 0.3s;
+}
+
+/* --- rest of your styles --- */
+#greeting-cont {
+    color: #F8F8FF;
+    font-size: 2.5rem;
+    font-family: 'Nunito', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 18px;
+    width: 90%;
+    text-shadow: 1px 2px 16px rgba(0,0,0,0.25);
+    position: static;
+}
+
 #edit-link {
     color: #c9c9c9;
     text-decoration: none;
     font-size: 20px;
-    padding: 20px;
+    padding: 18px;
     position: fixed;
     right: 0;
     bottom: 0;
+    transition: color 150ms;
 }
 #edit-link:hover {
-    color: white;
+    color: #FFD700;
 }
 #links-main-container {
     position: relative;
@@ -51,133 +97,149 @@ body{
     flex-direction: column;
     align-items: start;
     justify-content: start;
-}
-.link-outer-button, .link-outer-a{
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.link-outer-button, .link-outer-a {
+    width: 100%;
+    background: rgba(255,255,255,0.12);
     border: none;
     outline: none;
-    padding: 5px;
-    border-radius: 20px;
-    margin-bottom: 20px;
+    padding: 7px;
+    border-radius: 22px;
+    margin-bottom: 26px;
+    box-shadow: 0 4px 16px 0 rgba(32,32,60,0.08);
+    transition: background 200ms, box-shadow 200ms;
 }
+
 .link-outer-button {
     position: relative;
+    cursor: pointer;
 }
 .link-inner-cont {
     width: 100%;
-    position: relative;
     display: grid;
     grid-template-columns: 60px 1fr;
     align-items: center;
-    justify-content: center;
-    background-color: #0F1118;
-    border-radius: 15px;
-    transition-duration: 300ms;
+    background: #13152a;
+    border-radius: 16px;
+    transition: background 190ms;
 }
+
 .link-icon-cont {
-    width: 40px;
-    height: 40px;
+    width: 44px;
+    height: 44px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 15px;
-    background-color: #0F1118;
-    border: 5px solid white;
-    transform: scale(1.2);
+    background: #22244a;
+    border: 4px solid #FFF;
 }
 .link-icon {                    
-    width: 20px;
-    fill: #ffffff;
+    width: 28px;
+    fill: #f4f9ff;
 }
+
 .link-name {
-    color: white;
-    font-size: 20px;
-    font-family: monospace;
+    color: #f4f9ff;
+    font-size: 1.3rem;
+    font-family: 'Nunito', monospace;
 }
+
 .arrow-outer {
     position: absolute;
-    left: 80%;
+    left: 85%;
     top: 0;
     height: 100%;
     display: flex;
     align-items: center;
     opacity: 0;
-    transition-duration: 100ms;
-    transform: scaleY(2);
-}
-.arrow-inner {
-    width: 40px;
-    height: 40px;
-}
-.link-outer-button:hover {
-    background-color: rgba(255, 255, 255, 0.6);
-}
-.link-outer-button:hover .link-inner-cont {
-    background: none;
-}
-.link-outer-button:hover .link-name {
-    color: #0F1118;
-}
-.link-outer-button:hover .arrow-outer {
-    opacity: 1;
-    left: 90%;
-    transform: none;
-}
-#sub-links-cont {
-    padding: 0 10px;
-    overflow-y: hidden;
+    transition: opacity 150ms, left 150ms;
 }
 
+.arrow-inner {
+    width: 36px;
+    height: 36px;
+}
+.link-outer-button:hover,
+.link-outer-a:hover {
+    background: rgba(255, 255, 255, 0.21);
+    box-shadow: 0 8px 24px 0 rgba(32,32,60,0.14);
+}
+
+.link-outer-button:hover .link-inner-cont,
+.link-outer-a:hover .link-inner-cont {
+    background: #35456d;
+}
+
+.link-outer-button:hover .link-name,
+.link-outer-a:hover .link-name {
+    color: #FFD700;
+}
+
+.link-outer-button:hover .arrow-outer,
+.link-outer-a:hover .arrow-outer {
+    opacity: 1;
+    left: 92%;
+}
 .sub-title {
-    background: white;
+    background: #fff;
     display: flex;
-    justify-content: stretch;
     align-items: center;
-    padding: 5px 10px;
+    padding: 8px 18px;
+    border-radius: 22px;
+    height: 52px;
     margin-bottom: 20px;
-    height: 50px;
-    border-radius: 20px;
+    box-shadow: 0 2px 12px rgba(24,24,34,0.07);
 }
 .back-button {
     background: none;
     font-weight: bold;
     border: none;
-    outline: none;
     display: flex;
-    justify-content: center;
-    align-items:center;
+    align-items: center;
+    cursor: pointer;
 }
 .sub-link-back-icon {
-    width: 30px;
-    height: 30px;
+    width: 34px;
+    height: 34px;
     transform: rotateZ(180deg);
-    transition-duration: 100ms;
-    flex: 0 0 30px;
+    transition: transform 150ms;
 }
 .sub-link-title-text {
-    flex: 0 1 auto;
     width: 100%;
     text-align: center;
-    font-size: 25px;
+    font-size: 1.4rem;
     font-weight: bold;
 }
 .sub-title:hover .sub-link-back-icon {
-    transform: rotateZ(180deg) scale(1.2);
+    transform: rotateZ(180deg) scale(1.12);
 }
 .link-outer-a {
     display: block;
     text-decoration: none;
     position: relative;
-    animation: link-enter 100ms linear 0s 1 normal;
+    animation: link-enter 180ms cubic-bezier(0.4,0.1,0.2,1) 1;
     animation-fill-mode: backwards;
 }
-
 @keyframes link-enter {
     from {
-        right: 150%;
+        right: 120%;
     }
     to {
         right: 0;
+    }
+}
+@media (max-width: 900px) {
+    #main-container {
+        grid-template-columns: 1fr;
+        padding: 30px 6vw;
+        min-width: 0;
+        width: 100vw;
+    }
+    #greeting-cont {
+        width: 100%;
+        font-size: 2rem;
     }
 }
