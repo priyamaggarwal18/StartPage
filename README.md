@@ -3,13 +3,10 @@
 **Personalized Startpage** is a custom-built, lightweight, and efficient browser startpage designed to streamline your daily workflow. It moves beyond standard browser homepages by offering a centralized hub for your favorite links, real-time weather, GitHub statistics, and an integrated To-Do list, all within a sleek, modern, and single-viewport design. It is the perfect blend of utility and aesthetics to enhance your browsing experience.
 
 <div align="center">
-  <a href="https://start-page-brown.vercel.app">
-    <img alt="Project Demo Link" src="https://img.shields.io/badge/Demo%20Live-Click%20Here-black?style=for-the-badge&logo=vercel">
-  </a>
-  <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/navjot369/StartPage?style=for-the-badge&color=2ecc71">
-  <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/navjot369/StartPage?style=for-the-badge&color=2ecc71">
-  <img alt="GitHub forks" src="https://img.shields.io/github/forks/navjot369/StartPage?style=for-the-badge&color=2ecc71">
-  <img alt="Last commit" src="https://img-shields.io/github/last-commit/navjot369/StartPage?style=for-the-badge&color=2ecc71">
+  <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/navjot369/StartPage?style=for-the-badge&color=black">
+  <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/navjot369/StartPage?style=for-the-badge&color=black">
+  <img alt="GitHub forks" src="https://img.shields.io/github/forks/navjot369/StartPage?style=for-the-badge&color=black">
+  <img alt="Last commit" src="https://img.shields.io/github/last-commit/navjot369/StartPage?style=for-the-badge&color=black">
 </div>
 
 ## ✨ Features
